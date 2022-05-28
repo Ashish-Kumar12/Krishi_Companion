@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Companion</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        body, html
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-image
+        {
+            position: absolute;
+            display: block;
+            top: 5.5rem;
+            left: 0;
+            width: 100%;
+            background-size: cover;
+            z-index: -1;
+            background-color: #80a3db;
+            height: 100%;
+        }
+
+        .navbar
+        {
+            background-color: #fffcfc;
+        }
+
+        .h2
+        {
+            font: bold 32px "Open Sans", sans-serif;   
+        }
+
+        .col-md-8
+        {
+            font-family: "Quicksand", sans-serif;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-image opacity-50" style="background-image: url(static/images/background2.jpg);"></div>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid p-3">
+            <a class="navbar-brand" href="/">Krishi Companion</a>
+        </div>
+    </nav>
+
+    <div class="rounded m-5">
+
+        <div class="h2 text-center mb-4"> {{pred_output}} </div>
+
+        <div class="row p-2 my-2">
+            <div class="col-md-4">
+                <img src="{{ user_image }}" alt="User Image" class="rounded col-md-6 mx-auto d-block">
+            </div>
+            <div class="col-md-8">
+                <b>There is no disease on the plant.</b><br>
+                <br>
+                Some of the preventions you can follow to protect your plants are :
+                <ul>
+                    <li>Use manures and organic fertilizers to provide nutrients to plants.</li>
+                    <li>Do not overuse fertilizers. It's overuse can damage roots of the plant.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row p-2">
+            <div class="col-md-8">
+                <b>पौधे पर कोई रोग नहीं है।</b><br>
+                <br>
+                अपने पौधों की सुरक्षा के लिए आप कुछ रोकथामों का पालन कर सकते हैं:
+                <ul>
+                    <li>पौधों को पोषक तत्व प्रदान करने के लिए खाद और जैविक उर्वरकों का प्रयोग करें।</li>
+                    <li>उर्वरकों का अति प्रयोग न करें। इसका अधिक उपयोग पौधे की जड़ों को नुकसान पहुंचा सकता है।</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="{{ user_image }}" alt="User Image" class="rounded col-md-6 mx-auto d-block">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>

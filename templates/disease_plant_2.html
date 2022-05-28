@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Companion</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        body, html
+        {
+            margin: 0;
+            padding: 0;
+            background-repeat: repeat;
+            height: 100%;
+        }
+
+        .background-image
+        {
+            position: absolute;
+            display: block;
+            top: 5.5rem;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            z-index: -1;
+            background-color: #80a3db;
+        }
+
+        .navbar
+        {
+            background-color: #fffcfc;
+        }
+
+        .h2
+        {
+            font: bold 32px "Open Sans", sans-serif;   
+        }
+
+        .col-md-8
+        {
+            font-family: "Quicksand", sans-serif;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-image opacity-50" style="background-image: url(static/images/background2.jpg);"></div>
+
+    <nav class="navbar navbar-light bg-light nav-class">
+        <div class="container-fluid p-3">
+            <a class="navbar-brand" href="/">Krishi Companion</a>
+        </div>
+    </nav>
+
+    <div class="rounded m-5">
+
+        <div class="h2 text-center mb-4"> {{pred_output}} </div>
+
+        <div class="row p-2 my-2">
+            <div class="col-md-4">
+                <img src="{{ user_image }}" alt="User Image" class="rounded col-md-6 mx-auto d-block">
+            </div>
+            <div class="col-md-8">
+                <b>There is a disease present on the crop in mild to severe amount.</b><br>
+                Leaf curl disease of crop which is caused by “gemini virus” and which is transmitted by Whiteflies [Bemacia tabaci]. The first symptom appears on the younger leaves turning thick and forming cup shaped. Plant growth and development will be obviously stunted and boll number and size is less. Folowing are some the solutions:
+                <ul>
+                   <li>Proper nutrient management practices, addition of lot of organic matter in to the soil to maintain required organic carbon and increase the microbial activity.</li>
+                   <li>V-Bind 3 mL/ L ; Ezee 1 mL/L; Perfekt 1 mL/L; Viral out 1 gm/L Any one at one time spray may be administered to manage the viral diseases along with Magnum Mn 0.5 gm/l. </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row p-2">
+            <div class="col-md-8">
+                <b> हल्की से लेकर गंभीर मात्रा में फसल पर रोग मौजूद है।</b><br>
+                कर्ल  फसल का रोग "मिथुन वायरस" के कारण होता है और जो व्हाइटफ्लियों[बेमसिया ताबसी]है। पहला लक्षण छोटी पत्तियों पर मोटी और बनाने कप के आकार का बदल पर दिखाई देता है । पौधों की वृद्धि और विकास स्पष्ट रूप से अवरुद्ध हो जाएगा और बोल संख्या और आकार कम है।
+               <ul>
+                   <li>पोषक तत्व प्रबंधन प्रथाओं, आवश्यक कार्बनिक कार्बन को बनाए रखने और माइक्रोबियल गतिविधि को बढ़ाने के लिए मिट्टी में कार्बनिक पदार्थ के बहुत से जोड़।</li>
+                   <li>वी-बिंद 3 एमएल/ Ezee 1 mL/L; Perfekt 1 एमएल/एल; वायरल आउट भी मैग्नम एमएन के साथ वायरल बीमारियों का प्रबंधन करने के लिए प्रशासित किया जा सकता है ।</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="{{ user_image }}" alt="User Image" class="rounded col-md-6 mx-auto d-block">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>

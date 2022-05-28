@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Companion</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        body, html
+        {
+            margin: 0;
+            padding: 0;
+            background-repeat: repeat;
+            height: 100%;
+        }
+
+        .background-image
+        {
+            position: absolute;
+            display: block;
+            top: 5.5rem;
+            left: 0;
+            width: 100%;
+            background-size: cover;
+            z-index: -1;
+            background-color: #80a3db;
+            height: 100%;
+        }
+
+        .navbar
+        {
+            background-color: #fffcfc;
+        }
+
+        .h2
+        {
+            font: bold 32px "Open Sans", sans-serif;   
+        }
+
+        .col-md-8
+        {
+            font-family: "Quicksand", sans-serif;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-image opacity-50" style="background-image: url(static/images/background.jpg);"></div>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid p-3">
+            <a class="navbar-brand" href="/">Krishi Companion</a>
+        </div>
+    </nav>
+
+    <div class="rounded m-5">
+
+        <div class="h2 text-center mb-4"> {{pred_output}} </div>
+
+        <div class="row p-2 my-2">
+            <div class="col-md-4">
+                <img src="{{ user_image }}" alt="User Image" class="rounded col-md-6 mx-auto d-block">
+            </div>
+            <div class="col-md-8">
+                <b>There is a disease present on the crop in low to mild amount.</b><br>
+                 Canker is often identified by an open wound that has been infected by fungal or bacterial pathogens.  Some cankers are not serious while others can be mild. Symptoms may include sunken, swollen, cracked or dead areas found on stems, limbs or trunk.  Cankers can girdle branches, and kill foliage. Cankers are most common on stressed plants that have been weakened by cold, insects, drought conditions, nutritional imbalances or root rot.  Rodents can also spread the pathogens. Here are some solutions to prevent it:
+                <ul>
+                  <li>Remove diseased parts in dry weather.</li>
+                  <li>Keep plants healthy by planting in healthy soils and maintaining nutritional requirements.</li>
+                  <li>Grow resistant varieties whenever possible.</li>
+                </ul>           
+             </div>
+        </div>
+
+        <div class="row p-2">
+            <div class="col-md-8">
+                <b> फसल में कम से हल्की मात्रा में रोग मौजूद है।</b><br>
+                                   कैंकर को अक्सर एक खुले घाव से पहचाना जाता है जो कवक या जीवाणु रोगजनकों से संक्रमित होता है। कुछ कैंकर गंभीर नहीं होते हैं जबकि अन्य हल्के हो सकते हैं। लक्षणों में तने, अंगों या धड़ पर पाए जाने वाले धँसा, सूजे हुए, फटे या मृत क्षेत्र शामिल हो सकते हैं। कैंकर शाखाओं को घेर सकते हैं, और पत्ते को मार सकते हैं। तनावग्रस्त पौधों पर कैंकर सबसे आम हैं जो ठंड, कीड़ों, सूखे की स्थिति, पोषण असंतुलन या जड़ सड़न से कमजोर हो गए हैं। कृंतक रोगजनकों को भी फैला सकते हैं। इसे रोकने के लिए यहां कुछ उपाय दिए गए हैं :
+               <ul>
+                 <li>शुष्क मौसम में रोगग्रस्त भागों को हटा दें।</li>
+                 <li>स्वस्थ मिट्टी में रोपण और पोषण संबंधी आवश्यकताओं को बनाए रखते हुए पौधों को स्वस्थ रखें।</li>
+                 <li>जब भी संभव हो प्रतिरोधी किस्में उगाएं।</li>
+               </ul>              
+            </div>
+            <div class="col-md-4">
+                <img src="{{ user_image }}" alt="User Image" class="rounded col-md-6 mx-auto d-block">
+            </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>
